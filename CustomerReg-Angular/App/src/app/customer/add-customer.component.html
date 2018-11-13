@@ -1,0 +1,65 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Customer</h2>
+<form>
+ 
+
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input [(ngModel)]="customer.name" placeholder="Name" name="name" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input [(ngModel)]="customer.password" placeholder="Password" name="password" class="form-control" id="password">
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address:</label>
+   <input [(ngModel)]="customer.address" placeholder="Address" name="address" class="form-control" id="address">
+  </div>
+
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input [(ngModel)]="customer.city" placeholder="City" name="city" class="form-control" id="city">
+  </div>
+
+  <div class="form-group">
+    <label for="state">State:</label>
+    <input [(ngModel)]="customer.state" placeholder="State" name="state" class="form-control" id="state">
+  </div>
+
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input [(ngModel)]="customer.country" placeholder="Country" name="country" class="form-control" id="country">
+  </div>
+
+  <div class="form-group">
+    <label for="pincode">Pincode:</label>
+    <input [(ngModel)]="customer.pincode" placeholder="Pincode" name="pincode" class="form-control" id="pincode">
+  </div>
+
+  <div class="form-group">
+    <label for="email_address">Email_address:</label>
+    <input [(ngModel)]="customer.email_address" placeholder="Email_address" name="email_address" class="form-control" id="email_address">
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <input [(ngModel)]="customer.gender" placeholder="Gender" name="gender" class="form-control" id="gender">
+  </div>
+
+  <div class="form-group">
+    <label for="contact_no">Contact_no:</label>
+    <input [(ngModel)]="customer.contact_no" placeholder="Contact_no" name="contact_no" class="form-control" id="contact_no">
+  </div>
+
+  <div class="form-group">
+    <label for="dateofbirth">Dateofbirth:</label>
+    <input [(ngModel)]="customer.dateofbirth" placeholder="Dateofbirth" name="dateofbirth" class="form-control" id="dateofbirth">
+  </div>
+
+ 
+  <button class="btn btn-success" (click)="createCustomer()">Register</button>
+</form>
+</div>
+

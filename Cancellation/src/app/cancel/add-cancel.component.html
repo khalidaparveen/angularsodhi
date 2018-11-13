@@ -1,0 +1,44 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Cancel</h2>
+<form>
+  
+
+  <div class="form-group">
+    <label for="customer_id">Customer Id:</label>
+    <input [(ngModel)]="cancellation.customer_id" placeholder="Customer Id" name="customer_id" class="form-control" id="customer_id">
+  </div>
+  
+  <div class="form-group">
+    <label for="policy_id">Policy ID:</label>
+    <input type="text" [(ngModel)]="cancellation.policy_id" placeholder="Policy ID" name="policy_id" class="form-control" id="policy_id">
+  </div>
+
+  <div class="form-group">
+    <label for="total_amt">Total Amount:</label>
+    <input [(ngModel)]="cancellation.total_amt" placeholder="Total Amount" name="total_amt" class="form-control" id="total_amt">
+  </div>
+
+  <div class="form-group">
+    <label for="registration_date">Registered Date:</label>
+   <input type="date" [(ngModel)]="cancellation.registration_date" placeholder="Registered Date" name="registration_date" class="form-control" id="registration_date">
+  </div>
+
+  <div class="form-group">
+    <label for="last_paid_date">Last Paid Date:</label>
+    <input type="date" [(ngModel)]="cancellation.last_paid_date" placeholder="Last Paid Date" name="last_paid_date" class="form-control" id="last_paid_date">
+  </div>
+
+  <div class="form-group">
+    <label for="cancelled_date">Cancel Date:</label>
+    <input type="date" [(ngModel)]="cancellation.cancelled_date" placeholder="Cancel Date" name="cancelled_date" class="form-control" id="cancelled_date">
+  </div>
+
+  <div class="form-group">
+    <label for="withdraw_amt">Withdraw Amount:</label>
+    <input type="text" [(ngModel)]="cancellation.withdraw_amt" placeholder="Withdraw Amount" name="withdraw_amt" class="form-control" id="withdraw_amt">
+  </div>
+
+  <button class="btn btn-success" (click)="cancelPolicy()">Cancel</button>
+</form>
+</div>
+

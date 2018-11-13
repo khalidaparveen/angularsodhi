@@ -1,0 +1,38 @@
+<div class="col-md-6">
+  <h2 class="text-center">Make Payment</h2>
+<form>
+  <div class="form-group">
+    <label for="policy_id">Policy Id:</label>
+    <input type="text" [(ngModel)]="directpay.policyId" placeholder="Policy Id" name="policyId" class="form-control" id="policyId">
+  </div>
+
+  <div class="form-group">
+    <label for="premium_amount">Premium Amount:</label>
+    <input [(ngModel)]="directpay.premiumAmount" placeholder="Premium Amount" name="premiumAmount" class="form-control" id="premiumAmount">
+  </div>
+
+  <div class="form-group">
+    <label for="due_date">Due Date:</label>
+    <input type="date" [(ngModel)]="directpay.dueDate" placeholder="Due Date" name="dueDate" class="form-control" id="dueDate">
+  </div>
+
+  <div class="form-group">
+    <label for="payment_date">Payment Date:</label>
+   <input type="date" [(ngModel)]="directpay.paymentDate" placeholder="Payment Date" name="paymentDate" class="form-control" id="paymentDate">
+  </div>
+
+  <div class="form-group">
+    <label for="payment_mode">Payment Mode:</label>
+   <input [(ngModel)]="directpay.paymentMode" placeholder="Payment Mode" name="paymentMode" class="form-control" id="paymentMode">
+  </div>
+
+  <div class="form-group">
+    <label for="amount_paid">Amount Paid:</label>
+   <input [(ngModel)]="directpay.amountPaid" placeholder="Amount Paid" name="amountPaid" class="form-control" id="amountPaid">
+  </div>
+
+  <button class="btn btn-success" (click)="makePayment()">Pay</button>
+</form>
+</div>
+
+

@@ -1,0 +1,40 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Claim</h2>
+<form>
+  <div class="form-group">
+    <label for="policy_id">Policy ID:</label>
+    <input type="text" [(ngModel)]="theftclaim.policy_id" placeholder="Policy ID" name="policy_id" class="form-control" id="policy_id">
+  </div>
+
+  <div class="form-group">
+    <label for="username">User Name:</label>
+    <input [(ngModel)]="theftclaim.username" placeholder="User Name" name="username" class="form-control" id="username">
+  </div>
+
+  <div class="form-group">
+    <label for="total_amount">Total Amount:</label>
+    <input [(ngModel)]="theftclaim.total_amount" placeholder="Total Amount" name="total_amount" class="form-control" id="total_amount">
+  </div>
+
+  <div class="form-group">
+    <label for="date_of_theft">Date of Theft:</label>
+   <input type="date" [(ngModel)]="theftclaim.date_of_theft" placeholder="Date of Theft" name="date_of_theft" class="form-control" id="date_of_theft">
+  </div>
+
+  <div class="form-group">
+    <label for="date_of_complaint">Date of Complaint:</label>
+   <input type="date" [(ngModel)]="theftclaim.date_of_complaint" placeholder="Date of Complaint" name="date_of_complaint" class="form-control" id="date_of_complaint">
+  </div>
+  <div class="form-group">
+    <label for="fir_number">Fir Number:</label>
+   <input [(ngModel)]="theftclaim.fir_number" placeholder="Fir Number" name="fir_number" class="form-control" id="fir_number">
+  </div>
+  <div class="form-group">
+    <label for="police_station_branch">Police station Branch:</label>
+   <input [(ngModel)]="theftclaim.police_station_branch" placeholder="Police Station Branch" name="police_station_branch" class="form-control" id="police_station_branch">
+  </div>
+
+  <button class="btn btn-success" (click)="createClaim()">Claim</button>
+</form>
+</div>
+

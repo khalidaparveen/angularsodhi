@@ -1,0 +1,36 @@
+<div class="col-md-6">
+  <h2> Claim Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Policy ID</th>
+      <th>Username</th>
+      <th>Total Amount</th>
+      <th>Date of Theft</th>
+      <th>Date of Complaint</th>
+      <th>Fir Number</th>
+      <th>Police Station Branch</th>
+      <th>Claim ID</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.policy_id}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.total_amount}}</td>
+      <td>{{user.date_of_theft}}</td>
+      <td>{{user.date_of_complaint}}</td>
+      <td>{{user.fir_number}}</td>
+      <td>{{user.police_station_branch}}</td>
+      <td>{{user.claim_id}}</td>
+
+
+    </tr>
+    </tbody>
+  </table>
+  </div>

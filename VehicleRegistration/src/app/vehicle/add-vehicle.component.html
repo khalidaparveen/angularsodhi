@@ -1,0 +1,60 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Policy</h2>
+<form>
+  
+  <div class="form-group">
+    <label for="Vehicle_Owner">Vehicle Owner:</label>
+    <input [(ngModel)]="vehicle.vehicle_Owner" placeholder="Vehicle Owner" name="Vehicle_Owner" class="form-control" id="Vehicle_Owner">
+  </div>
+
+  <div class="form-group">
+    <label for="Vehicle_Registration_State">Vehicle Registration State:</label>
+    <input [(ngModel)]="vehicle.vehicle_Registration_State" placeholder="Vehicle Registration State" name="Vehicle_Registration_State" class="form-control" id="Vehicle_Registration_State">
+  </div>
+
+  <div class="form-group">
+    <label for="Vehicle_Type">Vehicle Type:</label>
+   <input [(ngModel)]="vehicle.vehicle_Type" placeholder="Vehicle Type" name="Vehicle_Type" class="form-control" id="Vehicle_Type">
+  </div>
+
+  <div class="form-group">
+    <label for="Vehicle_Class">Vehicle Class:</label>
+    <input type="text" [(ngModel)]="vehicle.vehicle_Class" placeholder="Vehicle Class" name="Vehicle_Class" class="form-control" id="Vehicle_Class">
+  </div>
+
+  <div class="form-group">
+    <label for="Manufacturer">Manufacturer:</label>
+    <input type="text" [(ngModel)]="vehicle.manufacturer" placeholder="Manufacturer" name="Manufacturer" class="form-control" id="Manufacturer">
+  </div>
+
+  <div class="form-group">
+    <label for="Model">Model:</label>
+    <input type="text" [(ngModel)]="vehicle.model" placeholder="Model" name="Model" class="form-control" id="Model">
+  </div>
+  <div class="form-group">
+    <label for="Engine_Number">Engine Number:</label>
+    <input type="text" [(ngModel)]="vehicle.engine_Number" placeholder="Engine Number" name="Engine_Number" class="form-control" id="Engine_Number">
+  </div>
+  <div class="form-group">
+    <label for="Make_Year">Make Year:</label>
+    <input type="text" [(ngModel)]="vehicle.make_Year" placeholder="Make Year" name="Make_Year" class="form-control" id="Make_Year">
+  </div>
+  <div class="form-group">
+    <label for="Registering_location">Registering Location:</label>
+    <input type="text" [(ngModel)]="vehicle.registering_location" placeholder="Registering Location" name="Registering_location" class="form-control" id="Registering_location">
+  </div>
+  <div class="form-group">
+    <label for="Date_of_Purchase">Date of Purchase:</label>
+    <input type="date" [(ngModel)]="vehicle.date_of_Purchase" placeholder="Date of Purchase" name="Date_of_Purchase" class="form-control" id="Date_of_Purchase">
+  </div>
+  <div class="form-group">
+    <label for="Price">Price:</label>
+    <input type="text" [(ngModel)]="vehicle.price" placeholder="Price" name="Price" class="form-control" id="Price">
+  </div>
+  
+
+
+  <button class="btn btn-success" (click)="createPolicy()">Create</button>
+</form>
+</div>
+

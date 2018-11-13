@@ -1,0 +1,35 @@
+<div class="col-md-6">
+  <h2> Cancel Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Cancel ID</th>
+      <th>Customer ID</th>
+      <th>Policy Id</th>
+      <th>Total Amount</th>
+      <th>Registered Date</th>
+      <th>Last Paid Date</th>
+      <th>Cancel Date</th>
+      <th>Withdraw Amount</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let user of cancels">
+      <td>{{user.cancel_id}}</td>
+      <td>{{user.customer_id}}</td>
+      <td>{{user.policy_id}}</td>
+      <td>{{user.total_amt}}</td>
+      <td>{{user.registration_date}}</td>
+      <td>{{user.last_paid_date}}</td>
+      <td>{{user.cancelled_date}}</td>
+      <td>{{user.withdraw_amt}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  </div>

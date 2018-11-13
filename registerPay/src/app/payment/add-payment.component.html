@@ -1,0 +1,37 @@
+<div class="col-md-6">
+  <h2 class="text-center">Make Payment</h2>
+<form>
+  <div class="form-group">
+    <label for="policy_id">Policy ID:</label>
+    <input type="text" [(ngModel)]="registeredpay.policy_id" placeholder="Policy ID" name="policy_id" class="form-control" id="policy_id">
+  </div>
+
+  <div class="form-group">
+    <label for="premium_amount">Premium Amount:</label>
+    <input [(ngModel)]="registeredpay.premium_amount" placeholder="Premium Amount" name="premium_amount" class="form-control" id="premium_amount">
+  </div>
+
+  <div class="form-group">
+    <label for="due_date">Due Date:</label>
+    <input type="date" [(ngModel)]="registeredpay.due_date" placeholder="Due Date" name="due_date" class="form-control" id="due_date">
+  </div>
+
+  <div class="form-group">
+    <label for="payment_date">Payment Date:</label>
+   <input type="date" [(ngModel)]="registeredpay.current_date" placeholder="Payment Date" name="payment_date" class="form-control" id="payment_date">
+  </div>
+
+  <div class="form-group">
+    <label for="payment_mode">Payment Mode:</label>
+   <input [(ngModel)]="registeredpay.payment_mode" placeholder="Payment Mode" name="payment_mode" class="form-control" id="payment_mode">
+  </div>
+
+  <div class="form-group">
+    <label for="amount_paid">Amount Paid:</label>
+   <input [(ngModel)]="registeredpay.amount_paid" placeholder="Amount Paid" name="amount_paid" class="form-control" id="amount_paid">
+  </div>
+
+  <button class="btn btn-success" (click)="makePayment()">Pay</button>
+</form>
+</div>
+

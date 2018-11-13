@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2> Payment Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Policy ID</th>
+      <th>Premium Amount</th>
+      <th>Due Date</th>
+      <th>Current Date</th>
+      <th>Payment Mode</th>
+      <th>Pay Amount</th>
+      <th>Payment ID</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let directpay of payments">
+      <td>{{directpay.policy_id}}</td>
+      <td>{{directpay.premium_amount}}</td>
+      <td>{{directpay.due_date}}</td>
+      <td>{{directpay.current_date}}</td>
+      <td>{{directpay.payment_mode}}</td>
+      <td>{{directpay.amount_paid}}</td>
+      <td>{{directpay.payment_id}}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>

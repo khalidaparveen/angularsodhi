@@ -1,0 +1,43 @@
+<div class="col-md-6">
+  <h2> Customer Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Customer_id</th>
+      <th>Name</th>
+      <th>Password</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Pincode</th>
+      <th>Email_address</th>
+      <th>Gender</th>
+      <th>Contact_no</th>
+      <th>Dateofbirth</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{customer.customer_id}}</td>
+      <td>{{customer.name}}</td>
+      <td>{{customer.password}}</td>
+      <td>{{customer.address}}</td>
+      <td>{{customer.city}}</td>
+      <td>{{customer.state}}</td>
+      <td>{{customer.country}}</td>
+      <td>{{customer.pincode}}</td>
+      <td>{{customer.email_address}}</td>
+      <td>{{customer.gender}}</td>
+      <td>{{customer.contact_no}}</td>
+      <td>{{customer.dateofbirth}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  </div>

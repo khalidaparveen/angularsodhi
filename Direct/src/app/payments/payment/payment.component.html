@@ -1,0 +1,34 @@
+<div class="col-md-6">
+  <h2> Payment Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Policy Id</th>
+      <th>Premium Amount</th>
+      <th>Due Date</th>
+      <th>Payment Date</th>
+      <th>Payment Mode</th>
+      <th>Amount Paid</th>
+      <th>Payment Id</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let payment of payments">
+      <td>{{payment.policyId}}</td>
+      <td>{{payment.premiumAmount}}</td>
+      <td>{{payment.dueDate}}</td>
+      <td>{{payment.paymentDate}}</td>
+      <td>{{payment.paymentMode}}</td>
+      <td>{{payment.amountPaid}}</td>  
+      <td>{{payment.paymentId}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  </div>
+
