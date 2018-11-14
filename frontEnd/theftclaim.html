@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vehicle Insurance System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="accidentclaim.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+<body>
+   <!-- ==============   images =====================-->
+
+   <div class="row">
+    <img src="images/topimage.jpg" class="col-md-6" height="100%">
+    <img src="images/topimage2.jpg" class="col-md-6" height="100%">
+  </div>
+
+
+  <!--==================  Main Content  ========================--> 
+
+  <div id="block" class="container mt-5">
+
+    <form>
+          <div class="container1">
+            <!---heading---->
+                <header class="heading"> Accident Claim</header><hr>
+             <!---Form starting----> 
+             <div class="row">
+              <!--- For Policy Id---->
+                 <div class="col-sm-12 mt-3">
+                        <div class="row justify-content-center">
+                      
+                          <div class="col-md-4"><label style="color: white" ><h5>Policy Id :</h5></label> </div>
+                        <div class="col-md-4">
+                            <input type="text" [(ngModel)]="user.policy_id" name="policy_id" id="policy_id" placeholder="Policy Id" class="form-control ">
+                        </div>
+                     </div>
+                </div>  
+                
+                 <!--- For username---->
+                 <div class="col-sm-12 mt-3">
+                    <div class="row justify-content-center">
+                  
+                      <div class="col-md-4"><label style="color: white" ><h5>User Name :</h5></label> </div>
+                    <div class="col-md-4">
+                        <input type="text" [(ngModel)]="user.username" name="username" id="username" placeholder="User Name" class="form-control ">
+                    </div>
+                 </div>
+            </div>            
+
+             <!--- For total_amount---->
+             <div class="col-sm-12 mt-3">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-4"><label style="color: white" ><h5>Total Amount :</h5></label> </div>
+                <div class="col-md-4">
+                    <input type="text" [(ngModel)]="user.total_amount" name="due_date" id="total_amount" placeholder="Total Amount" class="form-control ">
+                </div>
+             </div>
+        </div>            
+
+         <!--- For date_of_theft---->
+         <div class="col-sm-12 mt-3">
+            <div class="row justify-content-center">
+          
+              <div class="col-md-4"><label style="color: white" ><h5>Date of Theft :</h5></label> </div>
+            <div class="col-md-4">
+                <input type="date" [(ngModel)]="user.date_of_theft" name="date_of_theft" id="date_of_theft" placeholder="Date of Theft" class="form-control ">
+            </div>
+         </div>
+    </div>            
+    
+    <!--- For date_of_complaint---->
+    <div class="col-sm-12 mt-3">
+        <div class="row justify-content-center">
+      
+          <div class="col-md-4"><label style="color: white" ><h5>Date of Complaint :</h5></label> </div>
+        <div class="col-md-4">
+            <input type="date" [(ngModel)]="theftclaim.date_of_complaint" name="due_date" id="date_of_complaint" placeholder="Date of Complaint" class="form-control ">
+        </div>
+     </div>
+</div> 
+
+<!--- For fir_number---->
+<div class="col-sm-12 mt-3">
+    <div class="row justify-content-center">
+  
+      <div class="col-md-4"><label style="color: white" ><h5>Fir Number :</h5></label> </div>
+    <div class="col-md-4">
+        <input type="text" [(ngModel)]="theftclaim.fir_number" name="fir_number" id="fir_number" placeholder="Fir Number" class="form-control ">
+    </div>
+ </div>
+</div>            
+
+<!--- For police_station_branch---->
+<div class="col-sm-12 mt-3">
+    <div class="row justify-content-center">
+  
+      <div class="col-md-4"><label style="color: white" ><h5>Police Station Branch :</h5></label> </div>
+    <div class="col-md-4">
+        <input type="text" [(ngModel)]="theftclaim.police_station_branch" name="police_station_branch" id="police_station_branch" placeholder="Police Station Branch" class="form-control ">
+    </div>
+ </div>
+</div>            
+     
+
+
+<div class="container mt-3 mb-3">
+    <button type="submit"  class=" btn btn-success btn-block">Claim</button>
+    <button type="reset" class="btn btn-danger btn-block">Reset</button>
+
+  </div>
+
+
+
+
+
+
+</div>	 
+
+</div>
+</form>  
+</div>     
+</body>
+</html>

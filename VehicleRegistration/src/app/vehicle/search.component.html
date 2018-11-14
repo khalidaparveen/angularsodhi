@@ -1,0 +1,55 @@
+<h3>Find By Policy Id</h3>
+<div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname">Policy Id</label>
+      <input type="text" class="form-control" id="policy_id" required [(ngModel)]="policy_id" name="policy_id">
+    </div>
+ 
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+     
+      <th>Policy ID</th>
+      <th>Vehicle Owner</th>
+      <th>Vehicle Registration State</th>
+      <th>Vehicle Type</th>
+      <th>Vehicle Class</th>
+      <th>Manufacturer</th>
+      <th>Model</th>
+      <th>Engine Number</th>
+      <th>Make Year</th>
+      <th>Registering Location</th>
+      <th>Date of Purchase</th>
+      <th>Price</th>
+      <th>Premium Amount</th>
+
+
+
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let vehi of vehicles">
+      <td>{{vehi.policy_id}}</td>
+      <td>{{vehi.vehicle_Owner}}</td>
+      <td>{{vehi.vehicle_Registration_State}}</td>
+      <td>{{vehi.vehicle_Type}}</td>
+      <td>{{vehi.vehicle_Class}}</td>
+      <td>{{vehi.manufacturer}}</td>
+      <td>{{vehi.model}}</td>
+      <td>{{vehi.engine_Number}}</td>
+      <td>{{vehi.make_Year}}</td>
+      <td>{{vehi.registering_location}}</td>
+      <td>{{vehi.date_of_Purchase}}</td>
+      <td>{{vehi.price}}</td>
+      <td>{{vehi.premium_amount}}</td>
+
+    </tr>
+    </tbody>
+  </table>

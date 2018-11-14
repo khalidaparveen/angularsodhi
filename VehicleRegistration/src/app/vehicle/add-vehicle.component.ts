@@ -5,7 +5,7 @@ import { Vehicle } from '../models/vehicle.model';
 import { VehicleService } from './vehicle.service';
 
 @Component({
-  selector: 'app-add-user',
+  selector: 'app-add-vehicle',
   templateUrl: './add-Vehicle.component.html',
   styleUrls: ['./add-Vehicle.component.css']
 })

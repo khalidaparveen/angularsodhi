@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vehicle Insurance System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="directpay.js"></script>
+    <link rel="stylesheet" type="text/css" href="directpay.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+<body>
+   <!-- ==============   images =====================-->
+
+   <div class="row">
+    <img src="images/topimage.jpg" class="col-md-6" height="100%">
+    <img src="images/topimage2.jpg" class="col-md-6" height="100%">
+  </div>
+
+
+  <!--==================  Main Content  ========================--> 
+
+  <div id="block" class="container mt-5">
+
+    <form>
+          <div class="container1">
+            <!---heading---->
+                <header class="heading"> Direct Pay</header><hr>
+             <!---Form starting----> 
+             <div class="row">
+              <!--- For Policy Id---->
+                 <div class="col-sm-12 mt-3">
+                        <div class="row justify-content-center">
+                      
+                          <div class="col-md-4"><label style="color: white" ><h5>Policy Id :</h5></label> </div>
+                        <div class="col-md-4">
+                            <input type="text" [(ngModel)]="directpay.policyId" name="policyId" id="policyId" placeholder="Policy Id" class="form-control ">
+                        </div>
+                     </div>
+                </div>  
+                
+                 <!--- For Premium Amount---->
+                 <div class="col-sm-12 mt-3">
+                    <div class="row justify-content-center">
+                  
+                      <div class="col-md-4"><label style="color: white" ><h5>Premium Amount :</h5></label> </div>
+                    <div class="col-md-4">
+                        <input type="text" [(ngModel)]="directpay.premiumAmount" name="premiumAmount" id="premiumAmount" placeholder="Premium Amount" class="form-control ">
+                    </div>
+                 </div>
+            </div>            
+
+             <!--- For Due Date---->
+             <div class="col-sm-12 mt-3">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-4"><label style="color: white" ><h5>Due Date :</h5></label> </div>
+                <div class="col-md-4">
+                    <input type="date" [(ngModel)]="directpay.dueDate" name="dueDate" id="dueDate" placeholder="dueDate" class="form-control ">
+                </div>
+             </div>
+        </div>            
+
+         <!--- For Payment Date---->
+         <div class="col-sm-12 mt-3">
+            <div class="row justify-content-center">
+          
+              <div class="col-md-4"><label style="color: white" ><h5>Payment Date :</h5></label> </div>
+            <div class="col-md-4">
+                <input type="date" [(ngModel)]="directpay.paymentDate" name="paymentDate" id="paymentDate" placeholder="Payment Date" class="form-control ">
+            </div>
+         </div>
+    </div>            
+    
+     <!--- For Payment Mode---->
+     <div class="col-sm-12 mt-3">
+        <div class="row justify-content-center">
+      
+          <div class="col-md-4"><label style="color: white" ><h5>Payment Mode :</h5></label> </div>
+        <div class="col-md-4">
+            <select [(ngModel)]="directpay.paymentMode" name="paymentMode" id="paymentMode"  class="form-control ">
+                <option value="null">--Payment Mode--</option>
+                <option value="Debit Card">Debit Card</option>  
+                <option value="Credit Card">Credit Card</option>
+                <option value="Net Banking">Net Banking</option>
+                </select>
+        </div>
+     </div>
+</div>            
+
+ <!--- For Amount Paid---->
+ <div class="col-sm-12 mt-3">
+    <div class="row justify-content-center">
+  
+      <div class="col-md-4"><label style="color: white" ><h5>Amount Paid :</h5></label> </div>
+    <div class="col-md-4">
+        <input type="text" [(ngModel)]="directpay.amountPaid" name="amountPaid" id="amountPaid" placeholder="Amount Paid" class="form-control ">
+    </div>
+ </div>
+</div> 
+
+<div class="container mt-3 mb-3">
+    <button type="submit"  class=" btn btn-success btn-block">Pay</button>
+    <button type="reset" class="btn btn-danger btn-block">Reset</button>
+
+  </div>
+
+
+
+
+
+
+</div>	 
+
+</div>
+</form>  
+</div>     
+</body>
+</html>
